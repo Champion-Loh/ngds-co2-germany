@@ -1,0 +1,29 @@
+DATA QUALITY REPORT
+===================
+Source file:     data/raw/NGDS_CO2_Germany.csv
+Country:         Germany (DEU)
+Indicator:       Carbon dioxide (CO2) emissions (total) excluding LULUCF (Mt CO2e)
+Indicator code:  EN.GHG.CO2.MT.CE.AR5
+Rows read:       53
+Year range:      1970-2022 (53 years after cleaning)
+
+Checks performed
+----------------
+- Required columns present:                 yes
+- Single country in file:                   yes
+- Year parsed as integer (1800-2100):        yes
+- CO2 parsed as float, non-negative:         yes
+- Duplicate years:                          none
+- Missing years inserted:                   none
+- Values imputed (linear interpolation):    none
+- YoY % change outliers (robust z > 3.5):  none  [flagged, NOT removed]
+
+Row-level issues
+----------------
+none
+
+Columns dropped from the modelling table (constant for every row):
+Country Name, Country Code, Indicator Name, Indicator Code
+
+Not possible with this dataset: spatial (lat/long) matching and district-level
+comparison - the file is a single national total per year.

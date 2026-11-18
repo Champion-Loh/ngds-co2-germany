@@ -1,0 +1,31 @@
+model,fitted_on,term,coef,std_err,t_stat,p_value
+Naive (random walk),train 1971-2012,lag1,1.000000,,,
+Naive (random walk),full 1971-2022,lag1,1.000000,,,
+Linear trend,train 1970-2012,intercept,1173.002592,11.939559,98.245,<0.0001
+Linear trend,train 1970-2012,t,-9.158543,0.489474,-18.711,<0.0001
+Linear trend,full 1970-2022,intercept,1175.324247,10.626784,110.600,<0.0001
+Linear trend,full 1970-2022,t,-9.262691,0.352274,-26.294,<0.0001
+Quadratic trend,train 1970-2012,intercept,1141.096416,16.202082,70.429,<0.0001
+Quadratic trend,train 1970-2012,t,-4.489346,1.784498,-2.516,0.0160
+Quadratic trend,train 1970-2012,t2,-0.111171,0.041080,-2.706,0.0100
+Quadratic trend,full 1970-2022,intercept,1150.083634,14.952843,76.914,<0.0001
+Quadratic trend,full 1970-2022,t,-6.293207,1.329793,-4.732,<0.0001
+Quadratic trend,full 1970-2022,t2,-0.057105,0.024732,-2.309,0.0251
+Piecewise (break 1990),train 1970-2012,intercept,1121.226601,11.918938,94.071,<0.0001
+Piecewise (break 1990),train 1970-2012,t,-2.473733,1.072517,-2.306,0.0265
+Piecewise (break 1990),train 1970-2012,post_level_shift,-98.624028,17.023105,-5.794,<0.0001
+Piecewise (break 1990),train 1970-2012,post_slope_change,-6.093531,1.380640,-4.414,<0.0001
+Piecewise (break 1990),full 1970-2022,intercept,1121.226601,12.919264,86.787,<0.0001
+Piecewise (break 1990),full 1970-2022,t,-2.473733,1.162530,-2.128,0.0384
+Piecewise (break 1990),full 1970-2022,post_level_shift,-93.309196,17.264649,-5.405,<0.0001
+Piecewise (break 1990),full 1970-2022,post_slope_change,-6.456072,1.285245,-5.023,<0.0001
+Log-linear (1990+),train 1990-2012,intercept,7.077880,0.022050,320.986,<0.0001
+Log-linear (1990+),train 1990-2012,t,-0.009727,0.000696,-13.984,<0.0001
+Log-linear (1990+),full 1990-2022,intercept,7.114393,0.025110,283.330,<0.0001
+Log-linear (1990+),full 1990-2022,t,-0.010894,0.000674,-16.155,<0.0001
+AR(1) + trend,train 1971-2012,intercept,432.438682,129.746118,3.333,0.0019
+AR(1) + trend,train 1971-2012,lag1,0.633552,0.109448,5.789,<0.0001
+AR(1) + trend,train 1971-2012,t,-3.640029,1.067571,-3.410,0.0015
+AR(1) + trend,full 1971-2022,intercept,412.850269,117.122015,3.525,0.0009
+AR(1) + trend,full 1971-2022,lag1,0.650555,0.098777,6.586,<0.0001
+AR(1) + trend,full 1971-2022,t,-3.495513,0.941746,-3.712,0.0005
